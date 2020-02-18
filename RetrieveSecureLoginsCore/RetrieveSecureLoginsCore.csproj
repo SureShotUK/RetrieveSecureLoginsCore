@@ -2,7 +2,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>90aa2615-a714-44f6-96f9-ea266d8fc831</UserSecretsId>
     <ApplicationIcon>PFPPIconWithBG.ico</ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Steve Irwin</Authors>
@@ -14,13 +13,15 @@
     <PackageIconUrl />
     <PackageId>Portland.DevCentre.RetrieveSecureLoginsCore</PackageId>
     <PackageLicenseExpression>MIT License</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/SureShotUK/RetrieveSecureLoginsCore</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
   </PropertyGroup>
   <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
     </None>
-    <None Include="\\LS-WTGL03A\share\IT\Logos\App Logos\App152.png">
+    <None Include="PFPPIconWithBG.ico">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
