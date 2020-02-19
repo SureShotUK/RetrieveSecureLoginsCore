@@ -31,7 +31,7 @@ namespace RetrieveSecureLoginsCore.Controller
 
             if (isDevelopment)
             {
-                builder.AddUserSecrets<RetrieveSecureLoginCredentials>();
+                builder.AddUserSecrets<GetConfiguration>();
             }
 
             Configuration = builder.Build();

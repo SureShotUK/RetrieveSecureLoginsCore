@@ -15,5 +15,11 @@ namespace RetrieveSecureLoginsCore.Models
         public string LocalHost { get; set; }
         public string NonLocalPortNumber { get; set; }
         public string NonLocalHost { get; set; }
+        public string SiteGroundUserName { get; set; }
+        public string SiteGroundPassword { get; set; }
+        public string SiteGroundPortNumber { get; set; }
+        public string SiteGroundHost { get; set; }
+        public string SiteGroundDBName { get; set; }
+
     }
 }

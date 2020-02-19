@@ -24,7 +24,12 @@ namespace RetrieveSecureLoginsCore.Controller
                 !String.IsNullOrWhiteSpace(DatabaseCredentials.NonLocalHost) &&
                 !String.IsNullOrWhiteSpace(DatabaseCredentials.NonLocalPortNumber) &&
                 !String.IsNullOrWhiteSpace(DatabaseCredentials.LocalHost) &&
-                !String.IsNullOrWhiteSpace(DatabaseCredentials.LocalPortNumber)
+                !String.IsNullOrWhiteSpace(DatabaseCredentials.LocalPortNumber) &&
+                !String.IsNullOrWhiteSpace(DatabaseCredentials.SiteGroundDBName) &&
+                !String.IsNullOrWhiteSpace(DatabaseCredentials.SiteGroundHost) &&
+                !String.IsNullOrWhiteSpace(DatabaseCredentials.SiteGroundPortNumber) &&
+                !String.IsNullOrWhiteSpace(DatabaseCredentials.SiteGroundPassword) &&
+                !String.IsNullOrWhiteSpace(DatabaseCredentials.SiteGroundUserName)
                 );
         }
 

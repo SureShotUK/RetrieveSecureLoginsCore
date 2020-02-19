@@ -2,19 +2,65 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>90aa2615-a714-44f6-96f9-ea266d8fc831</UserSecretsId>
     <ApplicationIcon>PFPPIconWithBG.ico</ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Steve Irwin</Authors>
     <Company>Portland Fuel</Company>
     <Description>Allows you to load from the User Secrets Folder login credentials.
-</Description>
+Only for private use, will not work publicly, sorry.</Description>
     <Copyright>Portland Fuel</Copyright>
-    <PackageIcon>App152.png</PackageIcon>
+    <PackageIcon>Steve1k.png</PackageIcon>
     <PackageIconUrl />
     <PackageId>Portland.DevCentre.RetrieveSecureLoginsCore</PackageId>
-    <PackageLicenseExpression>MIT License</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/SureShotUK/RetrieveSecureLoginsCore</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
+    <Version>1.0.0.4</Version>
+    <AssemblyVersion>1.0.0.4</AssemblyVersion>
+    <Win32Resource />
+    <PackageReleaseNotes>When this has been imported an appsettings.json file needs putting into the project folder, with the 'Copy To Output Directory' property setting to 'Copy Always' with the following.
+{
+   "EmailCredentials": {
+    "UserName": "",
+    "Password": ""
+  },
+  "DatabaseCredentials": {
+    "UserName": "",
+    "Password": "",
+    "LocalPortNumber": "",
+    "LocalHost": "",
+    "NonLocalPortNumber": "",
+    "NonLocalHost": "",
+    "SiteGroundUserName": "",
+    "SiteGroundPassword": "",
+    "SiteGroundPortNumber": "",
+    "SiteGroundHost": "",
+    "SiteGroundDBName": ""
+  },
+  "LoginCredentials": {
+    "UserName": "",
+    "Password":  ""
+  }
+} 
+
+Go to Nuget Package Manager Console in VS or terminal window from the solution folder and run the following commands
+
+dotnet user-secrets init --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "EmailCredentials:UserName" "YOUR_EMAIL_USER_NAME" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "EmailCredentials:Password" "YOUR_EMAIL_PASSWORD" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "LoginCredentials:UserName" "YOUR_LOGIN_USER_NAME" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "LoginCredentialsPassword" "YOUR_LOGIN_PASSWORD" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "DatabaseCredentials:UserName" "YOUR_DATABASE_USER_NAME" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "DatabaseCredentials:Password" "YOUR_DATABASE_PASSWORD" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "DatabaseCredentials:LocalPort" "YOUR_DATABASE_LOCAL_NETWORK_PORT_NUMBER" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "DatabaseCredentials:LocalHost" "YOUR_DATABASE_LOCAL_HOST_NAME_OR_IP_ADDRESS" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "DatabaseCredentials:NonLocalPort" "YOUR_DATABASE_REMOTE_PORT_NUMBER" --project "&lt;YOUR_PROJECT_NAME&gt;"
+dotnet user-secrets set "DatabaseCredentials:NonLocalHost" "YOUR_DATABASE_REMOTE_HOST_NAME_OR_IP_ADDRESS" --project "&lt;YOUR_PROJECT_NAME&gt;"
+
+Replace the capitalised values with your own values.
+</PackageReleaseNotes>
+    <FileVersion>1.0.0.4</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Update="appsettings.json">
@@ -22,6 +68,10 @@
       <CopyToPublishDirectory>Always</CopyToPublishDirectory>
     </None>
     <None Include="PFPPIconWithBG.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="\\LS-WTGL03A\share\SI\Images\Personal\Steve1k.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
