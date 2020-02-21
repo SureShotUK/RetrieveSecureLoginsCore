@@ -3,21 +3,21 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>90aa2615-a714-44f6-96f9-ea266d8fc831</UserSecretsId>
-    <ApplicationIcon>PFPPIconWithBG.ico</ApplicationIcon>
+    <ApplicationIcon>ITGreen.ico</ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Steve Irwin</Authors>
     <Company>Portland Fuel</Company>
     <Description>Allows you to load from the User Secrets Folder login credentials.
 Only for private use, will not work publicly, sorry.</Description>
     <Copyright>Portland Fuel</Copyright>
-    <PackageIcon>Steve1k.png</PackageIcon>
+    <PackageIcon>PortlandRainbowRingLogoLightBlue.png</PackageIcon>
     <PackageIconUrl />
     <PackageId>Portland.DevCentre.RetrieveSecureLoginsCore</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/SureShotUK/RetrieveSecureLoginsCore</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
-    <Version>1.0.0.4</Version>
-    <AssemblyVersion>1.0.0.4</AssemblyVersion>
+    <Version>1.0.0.6</Version>
+    <AssemblyVersion>1.0.0.6</AssemblyVersion>
     <Win32Resource />
     <PackageReleaseNotes>When this has been imported an appsettings.json file needs putting into the project folder, with the 'Copy To Output Directory' property setting to 'Copy Always' with the following.
 {
@@ -60,28 +60,17 @@ dotnet user-secrets set "DatabaseCredentials:NonLocalHost" "YOUR_DATABASE_REMOTE
 
 Replace the capitalised values with your own values.
 </PackageReleaseNotes>
-    <FileVersion>1.0.0.4</FileVersion>
+    <FileVersion>1.0.0.6</FileVersion>
   </PropertyGroup>
   <ItemGroup>
-    <None Update="appsettings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </None>
-    <None Include="PFPPIconWithBG.ico">
+    <None Include="..\..\Images\New IT Images\Core\PortlandRainbowRingLogoLightBlue.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="\\LS-WTGL03A\share\SI\Images\Personal\Steve1k.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.1" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.2" />
   </ItemGroup>
 </Project>
