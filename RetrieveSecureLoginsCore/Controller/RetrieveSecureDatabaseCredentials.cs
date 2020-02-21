@@ -1,9 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
-using RetrieveSecureLoginsCore.Controller;
 using RetrieveSecureLoginsCore.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RetrieveSecureLoginsCore.Controller
 {

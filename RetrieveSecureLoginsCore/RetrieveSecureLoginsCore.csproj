@@ -16,8 +16,8 @@ Only for private use, will not work publicly, sorry.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/SureShotUK/RetrieveSecureLoginsCore</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
-    <Version>1.0.0.6</Version>
-    <AssemblyVersion>1.0.0.6</AssemblyVersion>
+    <Version>1.0.0.7</Version>
+    <AssemblyVersion>1.0.0.7</AssemblyVersion>
     <Win32Resource />
     <PackageReleaseNotes>When this has been imported an appsettings.json file needs putting into the project folder, with the 'Copy To Output Directory' property setting to 'Copy Always' with the following.
 {
@@ -60,7 +60,7 @@ dotnet user-secrets set "DatabaseCredentials:NonLocalHost" "YOUR_DATABASE_REMOTE
 
 Replace the capitalised values with your own values.
 </PackageReleaseNotes>
-    <FileVersion>1.0.0.6</FileVersion>
+    <FileVersion>1.0.0.7</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\Images\New IT Images\Core\PortlandRainbowRingLogoLightBlue.png">
