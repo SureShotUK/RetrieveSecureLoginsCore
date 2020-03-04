@@ -16,8 +16,8 @@ Only for private use, will not work publicly, sorry.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/SureShotUK/RetrieveSecureLoginsCore</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
-    <Version>1.0.0.8</Version>
-    <AssemblyVersion>1.0.0.8</AssemblyVersion>
+    <Version>1.0.0.9</Version>
+    <AssemblyVersion>1.0.0.9</AssemblyVersion>
     <Win32Resource />
     <PackageReleaseNotes>When this has been imported an appsettings.json file needs putting into the project folder, with the 'Copy To Output Directory' property setting to 'Copy Always' with the following.
 {

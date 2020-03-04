@@ -11,5 +11,6 @@
         public string AzureCloudInstance { get; set; }
         public string AadAuthorityAudience { get; set; }
         public string MicrosoftGraphBaseEndpoint { get; set; }
+        public string Scopes { get; set; }
     }
 }

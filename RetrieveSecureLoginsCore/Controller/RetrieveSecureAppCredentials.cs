@@ -21,7 +21,8 @@ namespace RetrieveSecureLoginsCore.Controller
                 !String.IsNullOrWhiteSpace(AppCredentials.ClientSecret) &&
                 !String.IsNullOrWhiteSpace(AppCredentials.AzureCloudInstance) &&
                 !String.IsNullOrWhiteSpace(AppCredentials.AadAuthorityAudience) &&
-                !String.IsNullOrWhiteSpace(AppCredentials.MicrosoftGraphBaseEndpoint)
+                !String.IsNullOrWhiteSpace(AppCredentials.MicrosoftGraphBaseEndpoint) &&
+                !String.IsNullOrWhiteSpace(AppCredentials.Scopes)
                 );
         }
     }
